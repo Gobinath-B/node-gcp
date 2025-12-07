@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const UserModel = require('./models/modelSchema')
+const UserModel = require('./modelSchema')
 const app = express();
 require('dotenv').config();
 const PORT = process.env.PORT || 3000;
@@ -74,4 +74,5 @@ app.put("/update/:id",async(req,res)=>{
 
 app.listen(PORT, ()=>{
     console.log(`listening on ${PORT}`);
+
 })
